@@ -112,21 +112,21 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+      <nav className="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-cyan-400" />
+              <Shield className="h-8 w-8 text-white" />
               <span className="text-xl font-bold">ETHICAL HACKER MURARI</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
-              <a href="#content" className="hover:text-cyan-400 transition-colors">Content</a>
-              <a href="#features" className="hover:text-cyan-400 transition-colors">Features</a>
-              <a href="#testimonials" className="hover:text-cyan-400 transition-colors">Reviews</a>
+              <a href="#about" className="hover:text-gray-300 transition-colors">About</a>
+              <a href="#content" className="hover:text-gray-300 transition-colors">Content</a>
+              <a href="#features" className="hover:text-gray-300 transition-colors">Features</a>
+              <a href="#testimonials" className="hover:text-gray-300 transition-colors">Reviews</a>
               
               {/* Social Media Links */}
               <div className="flex items-center space-x-3 ml-4 pl-4 border-l border-gray-700">
@@ -136,7 +136,7 @@ function App() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+                    className="text-gray-400 hover:text-white transition-colors transform hover:scale-110"
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5" />
@@ -156,12 +156,12 @@ function App() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700">
+          <div className="md:hidden bg-gray-900 border-t border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#about" className="block px-3 py-2 hover:bg-gray-700 rounded-md">About</a>
-              <a href="#content" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Content</a>
-              <a href="#features" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Features</a>
-              <a href="#testimonials" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Reviews</a>
+              <a href="#about" className="block px-3 py-2 hover:bg-gray-800 rounded-md">About</a>
+              <a href="#content" className="block px-3 py-2 hover:bg-gray-800 rounded-md">Content</a>
+              <a href="#features" className="block px-3 py-2 hover:bg-gray-800 rounded-md">Features</a>
+              <a href="#testimonials" className="block px-3 py-2 hover:bg-gray-800 rounded-md">Reviews</a>
               
               {/* Mobile Social Links */}
               <div className="flex justify-center space-x-4 pt-4 pb-2 border-t border-gray-700 mt-4">
@@ -171,7 +171,7 @@ function App() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+                    className="text-gray-400 hover:text-white transition-colors transform hover:scale-110"
                     aria-label={social.label}
                   >
                     <social.icon className="w-6 h-6" />
@@ -185,14 +185,14 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-gray-900 to-cyan-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/30 via-black to-gray-800/30"></div>
         
         {/* Animated background elements */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20">
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-2 h-2 bg-cyan-400 rounded-full animate-pulse"
+              className="absolute w-2 h-2 bg-white rounded-full animate-pulse"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -208,7 +208,7 @@ function App() {
             <div className="space-y-8 animate-fade-in-left">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 Bug Bounty{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
                   Training
                 </span>
               </h1>
@@ -220,11 +220,11 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleEnrollNow}
-                  className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25"
+                  className="px-8 py-4 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-white/25"
                 >
                   Enroll Now
                 </button>
-                <button className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-gray-900 rounded-lg font-semibold text-lg transition-all duration-300">
+                <button className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-black rounded-lg font-semibold text-lg transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -238,7 +238,7 @@ function App() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12"
+                    className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125 hover:rotate-12"
                     aria-label={social.label}
                   >
                     <social.icon className="w-6 h-6" />
@@ -249,14 +249,14 @@ function App() {
 
             <div className="relative animate-fade-in-right">
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
-                  <div className="w-48 h-48 mx-auto bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                    <Shield className="w-24 h-24 text-white" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-gray-400/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 border border-gray-700">
+                  <div className="w-48 h-48 mx-auto bg-gradient-to-br from-white via-gray-300 to-gray-600 rounded-full flex items-center justify-center">
+                    <Shield className="w-24 h-24 text-black" />
                   </div>
                   <div className="mt-6 text-center">
-                    <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full animate-pulse"></div>
+                    <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-to-r from-white to-gray-400 rounded-full animate-pulse"></div>
                     </div>
                     <p className="mt-2 text-sm text-gray-400">Cybersecurity Expert</p>
                   </div>
@@ -268,13 +268,13 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-800/50">
+      <section id="about" className="py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold">About this Training</h2>
               <p className="text-gray-300 leading-relaxed">
-                Kickstart your bug hunting journey with our <span className="text-cyan-400">0 to 100 day Bug Bounty Master Course</span>. Learn hands-on techniques, dive into live hunting sessions to discover new exploits. Discover 2500+ tested methodologies that give you a hacker's advantage.
+                Kickstart your bug hunting journey with our <span className="text-white font-semibold">0 to 100 day Bug Bounty Master Course</span>. Learn hands-on techniques, dive into live hunting sessions to discover new exploits. Discover 2500+ tested methodologies that give you a hacker's advantage.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 With this training you will increase your hunting skills exponentially. Whether you're just starting out or already hunting bugs, our course will take you to the next level. Ray ahead of the game and become a top bug hunter with us!
@@ -282,10 +282,10 @@ function App() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 border border-gray-700">
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-6 border border-gray-700">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full flex items-center justify-center">
-                    <BookOpen className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-white to-gray-400 rounded-full flex items-center justify-center">
+                    <BookOpen className="w-6 h-6 text-black" />
                   </div>
                   <div>
                     <h3 className="font-semibold">Comprehensive Learning</h3>
@@ -295,10 +295,10 @@ function App() {
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span>Course Progress</span>
-                    <span className="text-cyan-400">85%</span>
+                    <span className="text-white">85%</span>
                   </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-cyan-400 to-purple-500 h-2 rounded-full w-4/5"></div>
+                  <div className="w-full bg-gray-800 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-white to-gray-400 h-2 rounded-full w-4/5"></div>
                   </div>
                 </div>
               </div>
@@ -319,13 +319,13 @@ function App() {
             {courseContent.map((section, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 border border-gray-700 hover:border-cyan-400/50 transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-6 border border-gray-700 hover:border-white/50 transition-all duration-300 hover:transform hover:scale-105"
               >
-                <h3 className="text-xl font-semibold mb-4 text-cyan-400">{section.category}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">{section.category}</h3>
                 <ul className="space-y-2">
                   {section.topics.map((topic, topicIndex) => (
                     <li key={topicIndex} className="flex items-start space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
                       <span className="text-sm text-gray-300">{topic}</span>
                     </li>
                   ))}
@@ -337,7 +337,7 @@ function App() {
       </section>
 
       {/* Features */}
-      <section id="features" className="py-20 bg-gray-800/50">
+      <section id="features" className="py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Features</h2>
@@ -348,10 +348,10 @@ function App() {
             {[...features, ...additionalFeatures].map((feature, index) => (
               <div 
                 key={index}
-                className="flex items-center space-x-4 p-4 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg border border-gray-700 hover:border-cyan-400/50 transition-all duration-300"
+                className="flex items-center space-x-4 p-4 bg-gradient-to-r from-gray-900 to-black rounded-lg border border-gray-700 hover:border-white/50 transition-all duration-300"
               >
-                <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-4 h-4 text-white" />
+                <div className="w-8 h-8 bg-gradient-to-r from-white to-gray-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-4 h-4 text-black" />
                 </div>
                 <span className="text-gray-300">{feature}</span>
               </div>
@@ -366,20 +366,20 @@ function App() {
           <h2 className="text-4xl font-bold mb-12">Timings</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700">
-              <Clock className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
+            <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-8 border border-gray-700">
+              <Clock className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Duration</h3>
               <p className="text-gray-400">8+ to 10 Weeks</p>
             </div>
             
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700">
-              <Users className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
+            <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-8 border border-gray-700">
+              <Users className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Schedule</h3>
               <p className="text-gray-400">Wednesday to Sunday Every week</p>
             </div>
             
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700">
-              <Award className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
+            <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-8 border border-gray-700">
+              <Award className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Sessions</h3>
               <p className="text-gray-400">6 to 10 hours + Live Hunting Sessions</p>
             </div>
@@ -388,7 +388,7 @@ function App() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-gray-800/50">
+      <section id="testimonials" className="py-20 bg-gray-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">What People Are Saying</h2>
@@ -399,23 +399,23 @@ function App() {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700 hover:border-cyan-400/50 transition-all duration-300"
+                className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-8 border border-gray-700 hover:border-white/50 transition-all duration-300"
               >
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-semibold text-lg">
+                  <div className="w-16 h-16 bg-gradient-to-r from-white to-gray-400 rounded-full flex items-center justify-center">
+                    <span className="text-black font-semibold text-lg">
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
                     </span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">{testimonial.name}</h3>
-                    <p className="text-cyan-400 text-sm">{testimonial.role}</p>
+                    <p className="text-white text-sm">{testimonial.role}</p>
                   </div>
                 </div>
                 
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-5 h-5 text-white fill-current" />
                   ))}
                 </div>
                 
@@ -427,7 +427,7 @@ function App() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-cyan-900/50 to-purple-900/50">
+      <section className="py-20 bg-gradient-to-r from-gray-900/80 to-black/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Unlock Your Future with Our Premium Course
@@ -435,7 +435,7 @@ function App() {
           
           <div className="mb-8">
             <p className="text-2xl font-semibold mb-2">
-              Get lifetime access to our exclusive course for just <span className="text-cyan-400">₹499 INR or 75 USD</span>
+              Get lifetime access to our exclusive course for just <span className="text-white">₹499 INR or 75 USD</span>
             </p>
             <p className="text-gray-400">
               This price includes full access to all materials, updates, and expert guidance. Transform your skills and reach new heights in your career.
@@ -444,7 +444,7 @@ function App() {
 
           <button 
             onClick={handleEnrollNow}
-            className="inline-flex items-center px-12 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-xl font-semibold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 mb-6"
+            className="inline-flex items-center px-12 py-4 bg-white text-black hover:bg-gray-200 rounded-xl font-semibold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/25 mb-6"
           >
             Start Your Journey
             <ArrowRight className="ml-2 w-6 h-6" />
@@ -457,11 +457,11 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 border-t border-gray-800">
+      <footer className="py-12 bg-black border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-cyan-400" />
+              <Shield className="h-8 w-8 text-white" />
               <span className="text-xl font-bold">ETHICAL HACKER MURARI</span>
             </div>
             
@@ -473,7 +473,7 @@ function App() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125"
+                    className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125"
                     aria-label={social.label}
                   >
                     <social.icon className="w-6 h-6" />
