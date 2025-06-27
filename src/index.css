@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-fade-in-left {
+    animation: fadeInLeft 1s ease-out forwards;
+  }
+  
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease-out forwards;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #06b6d4, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #0891b2, #7c3aed);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glowing effects */
+.hover\:shadow-cyan-500\/25:hover {
+  box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.25);
+}
+
+/* Background patterns */
+body {
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(6, 182, 212, 0.1) 2px, transparent 0),
+    radial-gradient(circle at 75px 75px, rgba(139, 92, 246, 0.1) 2px, transparent 0);
+  background-size: 100px 100px;
+}
