@@ -119,7 +119,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold">MURARI TECH WORLD 75</span>
+              <span className="text-xl font-bold">ETHICAL HACKER MURARI</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -282,26 +282,11 @@ function App() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-6 border border-gray-700">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-white to-gray-400 rounded-full flex items-center justify-center">
-                    <BookOpen className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Comprehensive Learning</h3>
-                    <p className="text-sm text-gray-400">From beginner to expert level</p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span>Course Progress</span>
-                    <span className="text-white">85%</span>
-                  </div>
-                  <div className="w-full bg-gray-800 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-white to-gray-400 h-2 rounded-full w-4/5"></div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/channels4_banner.jpg" 
+                alt="Murari Tech World 75 Banner" 
+                className="w-full h-auto rounded-xl border border-gray-700 shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -462,7 +447,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold">MURARI TECH WORLD 75</span>
+              <span className="text-xl font-bold">ETHICAL HACKER MURARI</span>
             </div>
             
             <div className="flex justify-center">
@@ -484,7 +469,7 @@ function App() {
             
             <div className="text-center md:text-right">
               <p className="text-gray-400">
-                © 2025 Murari Tech World 75. All rights reserved.
+                © 2025 Ethical Hacker Murari. All rights reserved.
               </p>
             </div>
           </div>
