@@ -119,7 +119,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold">MURARI TECH WORLD</span>
+              <span className="text-xl font-bold">MURARI TECH WORLD 75</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -462,7 +462,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold">MURARI TECH WORLD</span>
+              <span className="text-xl font-bold">MURARI TECH WORLD 75</span>
             </div>
             
             <div className="flex justify-center">
@@ -484,7 +484,7 @@ function App() {
             
             <div className="text-center md:text-right">
               <p className="text-gray-400">
-                © 2025 Murari Tech World. All rights reserved.
+                © 2025 Murari Tech World 75. All rights reserved.
               </p>
             </div>
           </div>
